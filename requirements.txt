@@ -1,0 +1,2 @@
+pyfiglet>=0.8
+fire>=0.2.1
