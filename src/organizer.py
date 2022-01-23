@@ -7,7 +7,10 @@ from PIL import Image
 from datetime import datetime
 from typing import List, Optional
 from pyfiglet import Figlet
-from win32com.propsys import propsys, pscon
+try:
+    from win32com.propsys import propsys, pscon
+except:
+    pass
 
 
 def main(path: Optional[str] = None) -> None:
@@ -29,8 +32,8 @@ def __organize(path: Optional[str] = None) -> None:
         exit_if_no_files(files_path_list)
         filenames = __get_filenames_without_extension(files_path_list)
 
-        #old_folder_name = __create_folder(path, 'Organizer Backup')
-        #__copy_files_to_backup_folder(path, files_path_list, old_folder_name)
+        old_folder_name = __create_folder(path, 'Organizer Backup')
+        __copy_files_to_backup_folder(path, files_path_list, old_folder_name)
 
         __organize_by_date(path, files_path_list, filenames)
         print('\nSuccessful!\n')
