@@ -28,17 +28,20 @@ def __organize(path: Optional[str] = None, no_backup: Optional[bool] = False) ->
         path = os.getcwd()
 
     try:
+        print('Reading files, please wait. (Lendo arquivos, aguarde)')
         files_path_list = __get_files_path(path)
         __exit_if_no_files(files_path_list)
         filenames = __get_filenames_without_extension(files_path_list)
 
         if not no_backup:
+            print('Creating backup, please wait. (Criando backup, aguarde)')
             old_folder_name = __create_folder(path, 'Organizer Backup')
             __copy_files_to_backup_folder(
                 path, files_path_list, old_folder_name)
 
+        print('Organizing files, please wait. (Organizando arquivos, aguarde)')
         __organize_by_date(path, files_path_list, filenames)
-        print('\nSuccessful!\n')
+        print('\nSuccessful! (Sucesso!)\n')
     except Exception as e:
         print(f'Error: {str(e)}')
 
