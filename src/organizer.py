@@ -14,7 +14,7 @@ except:
 
 
 def main(path: Optional[str] = None) -> None:
-    __print_logo('file organizer')
+    __print_logo('files organizer')
     fire.Fire(__organize)
 
 
@@ -23,17 +23,19 @@ def __print_logo(text_logo: str) -> None:
     print(figlet.renderText(text_logo))
 
 
-def __organize(path: Optional[str] = None) -> None:
+def __organize(path: Optional[str] = None, no_backup: Optional[bool] = False) -> None:
     if path is None:
         path = os.getcwd()
 
     try:
         files_path_list = __get_files_path(path)
-        exit_if_no_files(files_path_list)
+        __exit_if_no_files(files_path_list)
         filenames = __get_filenames_without_extension(files_path_list)
 
-        old_folder_name = __create_folder(path, 'Organizer Backup')
-        __copy_files_to_backup_folder(path, files_path_list, old_folder_name)
+        if not no_backup:
+            old_folder_name = __create_folder(path, 'Organizer Backup')
+            __copy_files_to_backup_folder(
+                path, files_path_list, old_folder_name)
 
         __organize_by_date(path, files_path_list, filenames)
         print('\nSuccessful!\n')
@@ -52,7 +54,7 @@ def __get_files_path(path: str) -> List[str]:
     return files_path_list
 
 
-def exit_if_no_files(files_path_list: List[str]) -> None:
+def __exit_if_no_files(files_path_list: List[str]) -> None:
     if len(files_path_list) <= 0:
         print('No files to organize!')
         exit()

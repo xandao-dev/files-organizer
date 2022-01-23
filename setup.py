@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="files-organizer",
-    version="1.0.0",
+    version="1.0.1",
     install_requires=["pyfiglet>=0.8", "fire>=0.2.1"],
     extras_require={"win": ["pywin32"]},
     packages=find_packages(),
