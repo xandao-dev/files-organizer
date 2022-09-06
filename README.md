@@ -8,15 +8,14 @@
     <br />
     :warning: Linux limitation: If the file doesn't have a date on it's name, it's not possible to get the file creation date, so the last modified date will be used instead. :warning:
     <br />
-	  <br />
-    <a href="https://github.com/xandao6/files-organizer"><strong>Explore the docs »</strong></a>
     <br />
-    <a href="https://github.com/xandao6/files-organizer/issue">Report Bug</a>
+    <a href="https://github.com/xandao-dev/files-organizer"><strong>Explore the docs »</strong></a>
+    <br />
+    <a href="https://github.com/xandao-dev/files-organizer/issue">Report Bug</a>
     ·
-    <a href="https://github.com/xandao6/files-organizer/issues">Request Feature</a>
+    <a href="https://github.com/xandao-dev/files-organizer/issues">Request Feature</a>
   </p>
 </p>
-
 
 
 <!-- TABLE OF CONTENTS -->
@@ -46,12 +45,11 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <div align="center">
-  <a href="https://github.com/xandao6/files-organizer">
+  <a href="https://github.com/xandao-dev/files-organizer">
     <img src="images/before.png" alt="before organize">
 	  <img src="images/after.png" alt="after organize">
   </a>
@@ -90,7 +88,7 @@ You can install the tool from PyPI or directly from GitHub. You just need to hav
 
 1. Clone the repo
   ```sh
-  git clone https://github.com/xandao6/files-organizer.git
+  git clone https://github.com/xandao-dev/files-organizer.git
   ```
 
 2. Install the tool
@@ -132,7 +130,7 @@ You can install the tool from PyPI or directly from GitHub. You just need to hav
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/xandao6/files-organizer/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/xandao-dev/files-organizer/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
@@ -157,22 +155,6 @@ Free software =)
 <!-- CONTACT -->
 ## Contact
 
-Alexandre Calil - [@xandao6](https://www.linkedin.com/in/xandao6/) - alexandrecalilmf@gmail.com
+Alexandre Calil - [Linkedin](https://www.linkedin.com/in/xandao-dev/) - [alexandre@xandao.dev](mailto:alexandre@xandao.dev)
 
-Project Link: [https://github.com/xandao6/files-organizer](https://github.com/xandao6/files-organizer)
-
-
-<!-- LINKS & IMAGES Variables-->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/xandao6/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/xandao6/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/xandao6/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/xandao6/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/xandao6/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/xandao6/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/xandao6/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/xandao6/repo/issues
-[license-shield]: https://img.shields.io/github/license/xandao6/repo.svg?style=for-the-badge
-[license-url]: https://github.com/xandao6/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/xandao6
+Project Link: [https://github.com/xandao-dev/files-organizer](https://github.com/xandao-dev/files-organizer)
