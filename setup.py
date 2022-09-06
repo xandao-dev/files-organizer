@@ -16,7 +16,7 @@ setup(
     author_email="alexandrecalilmf@gmail.com",
     license="MIT",
     python_requires=">=3.6",
-    url="https://github.com/xandao6/files-organizer",
+    url="https://github.com/xandao-dev/files-organizer",
     download_url="https://pypi.org/project/files-organizer",
     keywords=[
         "organizer"
