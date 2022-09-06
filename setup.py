@@ -13,7 +13,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Alexandre Calil Martins Fonseca",
-    author_email="alexandrecalilmf@gmail.com",
+    author_email="alexandre@xandao.dev",
     license="MIT",
     python_requires=">=3.6",
     url="https://github.com/xandao-dev/files-organizer",
